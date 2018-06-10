@@ -51,7 +51,7 @@ class RisingSunPuzzle extends Component {
         gridRow: topLeft[1],
       };
 
-      return <div key={pieceID} className={pieceClassName} style={pieceStyle}></div>
+      return <div key={pieceID} className={pieceClassName} style={pieceStyle}></div>;
     });
 
     return (
