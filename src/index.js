@@ -47,8 +47,8 @@ class RisingSunPuzzle extends Component {
 
       const pieceID = shortid.generate();
       const pieceStyle = {
-        gridColumn: topLeft[0],
-        gridRow: topLeft[1],
+        gridColumnStart: topLeft[0],
+        gridRowStart: topLeft[1],
       };
 
       return <div key={pieceID} className={pieceClassName} style={pieceStyle}></div>;

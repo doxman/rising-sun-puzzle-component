@@ -333,8 +333,8 @@ var RisingSunPuzzle = function (_Component) {
 
         var pieceID = shortid.generate();
         var pieceStyle = {
-          gridColumn: topLeft[0],
-          gridRow: topLeft[1]
+          gridColumnStart: topLeft[0],
+          gridRowStart: topLeft[1]
         };
 
         return _react2.default.createElement('div', { key: pieceID, className: pieceClassName, style: pieceStyle });
