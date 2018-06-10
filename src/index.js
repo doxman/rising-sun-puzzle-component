@@ -7,16 +7,16 @@ class RisingSunPuzzle extends Component {
     super(props);
     this.state = {
       piecePositions: { // Top-left corner of each piece; since pieces can't rotate this is unambiguous
-        sun: [1, 3],
-        square1: [0, 3],
-        square2: [0, 4],
-        square3: [3, 3],
-        square4: [3, 4],
-        wide: [1, 2],
-        tall1: [0, 0],
-        tall2: [1, 0],
-        tall3: [2, 0],
-        tall4: [3, 0],
+        sun: [2, 4],
+        square1: [1, 4],
+        square2: [1, 5],
+        square3: [4, 4],
+        square4: [4, 5],
+        wide: [2, 3],
+        tall1: [1, 1],
+        tall2: [2, 1],
+        tall3: [3, 1],
+        tall4: [4, 1],
       },
     };
   }

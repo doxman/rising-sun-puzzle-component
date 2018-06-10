@@ -287,16 +287,16 @@ var RisingSunPuzzle = function (_Component) {
 
     _this.state = {
       piecePositions: { // Top-left corner of each piece; since pieces can't rotate this is unambiguous
-        sun: [1, 3],
-        square1: [0, 3],
-        square2: [0, 4],
-        square3: [3, 3],
-        square4: [3, 4],
-        wide: [1, 2],
-        tall1: [0, 0],
-        tall2: [1, 0],
-        tall3: [2, 0],
-        tall4: [3, 0]
+        sun: [2, 4],
+        square1: [1, 4],
+        square2: [1, 5],
+        square3: [4, 4],
+        square4: [4, 5],
+        wide: [2, 3],
+        tall1: [1, 1],
+        tall2: [2, 1],
+        tall3: [3, 1],
+        tall4: [4, 1]
       }
     };
     return _this;
@@ -362,7 +362,7 @@ exports = module.exports = __webpack_require__(7)(false);
 
 
 // module
-exports.push([module.i, "html {\n  --board-columns: 4;\n  --board-rows: 5;\n}\n\n.risingsunpuzzle-board {\n  width: 243px;\n  height: 303px;\n  padding-left: 30px;\n  padding-right: 30px;\n  margin-left: auto;\n  margin-right: auto;\n\n  background-color: blue;\n  border: 1px solid blue;\n\n  display: grid;\n  grid-template-rows: repeat(var(--board-rows), calc(300px / var(--board-rows)));\n  grid-template-columns: repeat(var(--board-columns), calc(239px / var(--board-columns)));\n  grid-gap: 1px 1px;\n}\n\n.risingsunpuzzle-piece {\n  padding: 10px;\n}\n\n.risingsunpuzzle-piece.risingsunpuzzle-piece-sun {\n  background-color: red;\n  grid-column-end: span 2;\n  grid-row-end: span 2;\n}\n\n.risingsunpuzzle-piece.risingsunpuzzle-piece-cloud {\n  background-color: white;\n  grid-row-end: span 2;\n}\n\n.risingsunpuzzle-piece.risingsunpuzzle-piece-night {\n  background-color: black;\n  grid-column-end: span 2;\n}\n\n.risingsunpuzzle-piece.risingsunpuzzle-piece-star {\n  background-color: gold;\n}\n", ""]);
+exports.push([module.i, "html {\n  --board-columns: 4;\n  --board-rows: 5;\n}\n\n.risingsunpuzzle-board {\n  width: 243px;\n  height: 303px;\n  padding-left: 30px;\n  padding-right: 30px;\n  margin-left: auto;\n  margin-right: auto;\n\n  background-color: blue;\n  border: 1px solid blue;\n\n  display: grid;\n  grid-template-rows: repeat(var(--board-rows), calc(300px / var(--board-rows)));\n  grid-template-columns: repeat(var(--board-columns), calc(239px / var(--board-columns)));\n  grid-gap: 1px 1px;\n}\n\n.risingsunpuzzle-piece {\n  padding: 10px;\n}\n\n.risingsunpuzzle-piece.risingsunpuzzle-piece-sun {\n  background-color: red;\n  grid-column-end: span 2;\n  grid-row-end: span 2;\n}\n\n.risingsunpuzzle-piece.risingsunpuzzle-piece-cloud {\n  background-color: white;\n  grid-column-end: span 2;\n}\n\n.risingsunpuzzle-piece.risingsunpuzzle-piece-night {\n  background-color: black;\n  grid-row-end: span 2;\n}\n\n.risingsunpuzzle-piece.risingsunpuzzle-piece-star {\n  background-color: gold;\n}\n", ""]);
 
 // exports
 

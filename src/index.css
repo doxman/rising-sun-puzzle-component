@@ -32,12 +32,12 @@ html {
 
 .risingsunpuzzle-piece.risingsunpuzzle-piece-cloud {
   background-color: white;
-  grid-row-end: span 2;
+  grid-column-end: span 2;
 }
 
 .risingsunpuzzle-piece.risingsunpuzzle-piece-night {
   background-color: black;
-  grid-column-end: span 2;
+  grid-row-end: span 2;
 }
 
 .risingsunpuzzle-piece.risingsunpuzzle-piece-star {
