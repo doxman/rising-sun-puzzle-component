@@ -43,3 +43,11 @@ html {
 .risingsunpuzzle-piece.risingsunpuzzle-piece-star {
   background-color: gold;
 }
+
+.risingsunpuzzle-arrow {
+  background-color: white;
+}
+
+.risingsunpuzzle-arrow:hover {
+  background-color: teal;
+}
