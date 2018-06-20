@@ -1,6 +1,6 @@
 {
   "name": "@zeoxyman/rising-sun-puzzle-component",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Rising Sun slide puzzle as a React library",
   "main": "build/index.js",
   "peerDependencies": {
