@@ -343,22 +343,22 @@ var RisingSunPuzzle = function (_Component) {
           _react2.default.createElement(
             'div',
             { className: 'risingsunpuzzle-arrow risingsunpuzzle-arrowUp' },
-            _react2.default.createElement('img', { src: 'assets/UpArrow.png' })
+            _react2.default.createElement('img', { src: './assets/UpArrow.png' })
           ),
           _react2.default.createElement(
             'div',
             { className: 'risingsunpuzzle-arrow risingsunpuzzle-arrowRight' },
-            _react2.default.createElement('img', { src: 'assets/RightArrow.png' })
+            _react2.default.createElement('img', { src: './assets/RightArrow.png' })
           ),
           _react2.default.createElement(
             'div',
             { className: 'risingsunpuzzle-arrow risingsunpuzzle-arrowDown' },
-            _react2.default.createElement('img', { src: 'assets/DownArrow.png' })
+            _react2.default.createElement('img', { src: './assets/DownArrow.png' })
           ),
           _react2.default.createElement(
             'div',
             { className: 'risingsunpuzzle-arrow risingsunpuzzle-arrowLeft' },
-            _react2.default.createElement('img', { src: 'assets/LeftArrow.png' })
+            _react2.default.createElement('img', { src: './assets/LeftArrow.png' })
           )
         );
       });
