@@ -26,10 +26,23 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
-          'file-loader'
+          {
+            loader: 'url-loader',
+            options:{
+              fallback: "file-loader",
+              name: "[name][md5:hash].[ext]",
+              outputPath: 'assets/',
+              publicPath: '/assets/'
+            }
+          }
         ]
-      }
+      },
     ]
+  },
+  resolve: {
+    alias:{
+        'assets': path.resolve(__dirname, 'assets')
+    }
   },
   externals: {
     'react': 'commonjs react'
