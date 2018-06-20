@@ -64,7 +64,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -74,7 +74,7 @@ module.exports =
 "use strict";
 
 
-var randomFromSeed = __webpack_require__(13);
+var randomFromSeed = __webpack_require__(17);
 
 var ORIGINAL = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_-';
 var alphabet;
@@ -179,7 +179,7 @@ module.exports = {
 "use strict";
 
 
-var randomByte = __webpack_require__(12);
+var randomByte = __webpack_require__(16);
 
 function encode(lookup, number) {
     var loopCounter = 0;
@@ -202,19 +202,43 @@ module.exports = encode;
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-module.exports = __webpack_require__(10);
-
+module.exports = __webpack_require__.p + "09d67a5e835e5e17cfe00a477ba362b2.png";
 
 /***/ }),
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__.p + "1fa04f65ef318d575f873c85c351dc2b.png";
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "7da6ce0f6339085037b3dfeb4e743515.png";
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "e5675b586d4a7fc094db32a6724832ec.png";
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+module.exports = __webpack_require__(14);
+
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(6);
+var content = __webpack_require__(10);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -222,7 +246,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(15)(content, options);
+var update = __webpack_require__(19)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -239,13 +263,13 @@ if(false) {
 }
 
 /***/ }),
-/* 4 */
+/* 8 */
 /***/ (function(module, exports) {
 
 module.exports = require("react");
 
 /***/ }),
-/* 5 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -257,15 +281,31 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(4);
+var _react = __webpack_require__(8);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _shortid = __webpack_require__(2);
+var _shortid = __webpack_require__(6);
 
 var shortid = _interopRequireWildcard(_shortid);
 
-__webpack_require__(3);
+__webpack_require__(7);
+
+var _UpArrow = __webpack_require__(5);
+
+var _UpArrow2 = _interopRequireDefault(_UpArrow);
+
+var _RightArrow = __webpack_require__(4);
+
+var _RightArrow2 = _interopRequireDefault(_RightArrow);
+
+var _DownArrow = __webpack_require__(2);
+
+var _DownArrow2 = _interopRequireDefault(_DownArrow);
+
+var _LeftArrow = __webpack_require__(3);
+
+var _LeftArrow2 = _interopRequireDefault(_LeftArrow);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -337,28 +377,38 @@ var RisingSunPuzzle = function (_Component) {
           gridRowStart: topLeft[1]
         };
 
+        var arrowUp = new Image();
+        var arrowRight = new Image();
+        var arrowDown = new Image();
+        var arrowLeft = new Image();
+
+        arrowUp.src = _UpArrow2.default;
+        arrowRight.src = _RightArrow2.default;
+        arrowDown.src = _DownArrow2.default;
+        arrowLeft.src = _LeftArrow2.default;
+
         return _react2.default.createElement(
           'div',
           { key: pieceID, className: pieceClassName, style: pieceStyle },
           _react2.default.createElement(
             'div',
             { className: 'risingsunpuzzle-arrow risingsunpuzzle-arrowUp' },
-            _react2.default.createElement('img', { src: './assets/UpArrow.png' })
+            arrowUp
           ),
           _react2.default.createElement(
             'div',
             { className: 'risingsunpuzzle-arrow risingsunpuzzle-arrowRight' },
-            _react2.default.createElement('img', { src: './assets/RightArrow.png' })
+            arrowRight
           ),
           _react2.default.createElement(
             'div',
             { className: 'risingsunpuzzle-arrow risingsunpuzzle-arrowDown' },
-            _react2.default.createElement('img', { src: './assets/DownArrow.png' })
+            arrowDown
           ),
           _react2.default.createElement(
             'div',
             { className: 'risingsunpuzzle-arrow risingsunpuzzle-arrowLeft' },
-            _react2.default.createElement('img', { src: './assets/LeftArrow.png' })
+            arrowLeft
           )
         );
       });
@@ -377,10 +427,10 @@ var RisingSunPuzzle = function (_Component) {
 exports.default = RisingSunPuzzle;
 
 /***/ }),
-/* 6 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(7)(false);
+exports = module.exports = __webpack_require__(11)(false);
 // imports
 
 
@@ -391,7 +441,7 @@ exports.push([module.i, "html {\n  --board-columns: 4;\n  --board-rows: 5;\n}\n\
 
 
 /***/ }),
-/* 7 */
+/* 11 */
 /***/ (function(module, exports) {
 
 /*
@@ -473,7 +523,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 8 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -528,7 +578,7 @@ module.exports = build;
 
 
 /***/ }),
-/* 9 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -552,7 +602,7 @@ module.exports = decode;
 
 
 /***/ }),
-/* 10 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -560,15 +610,15 @@ module.exports = decode;
 
 var alphabet = __webpack_require__(0);
 var encode = __webpack_require__(1);
-var decode = __webpack_require__(9);
-var build = __webpack_require__(8);
-var isValid = __webpack_require__(11);
+var decode = __webpack_require__(13);
+var build = __webpack_require__(12);
+var isValid = __webpack_require__(15);
 
 // if you are using cluster or multiple servers use this to make each instance
 // has a unique value for worker
 // Note: I don't know if this is automatically set when using third
 // party cluster solutions such as pm2.
-var clusterWorkerId = __webpack_require__(14) || 0;
+var clusterWorkerId = __webpack_require__(18) || 0;
 
 /**
  * Set the seed.
@@ -624,7 +674,7 @@ module.exports.isValid = isValid;
 
 
 /***/ }),
-/* 11 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -650,7 +700,7 @@ module.exports = isShortId;
 
 
 /***/ }),
-/* 12 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -671,7 +721,7 @@ module.exports = randomByte;
 
 
 /***/ }),
-/* 13 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -703,7 +753,7 @@ module.exports = {
 
 
 /***/ }),
-/* 14 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -713,7 +763,7 @@ module.exports = 0;
 
 
 /***/ }),
-/* 15 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -769,7 +819,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(16);
+var	fixUrls = __webpack_require__(20);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -1085,7 +1135,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 16 */
+/* 20 */
 /***/ (function(module, exports) {
 
 

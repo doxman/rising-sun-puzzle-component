@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import * as shortid from 'shortid';
 import './index.css';
+import UpArrow from './assets/UpArrow.png';
+import RightArrow from './assets/RightArrow.png';
+import DownArrow from './assets/DownArrow.png';
+import LeftArrow from './assets/LeftArrow.png';
 
 class RisingSunPuzzle extends Component {
   constructor(props) {
@@ -51,18 +55,28 @@ class RisingSunPuzzle extends Component {
         gridRowStart: topLeft[1],
       };
 
+      const arrowUp = new Image();
+      const arrowRight = new Image();
+      const arrowDown = new Image();
+      const arrowLeft = new Image();
+
+      arrowUp.src = UpArrow;
+      arrowRight.src = RightArrow;
+      arrowDown.src = DownArrow;
+      arrowLeft.src = LeftArrow;
+
       return <div key={pieceID} className={pieceClassName} style={pieceStyle}>
         <div className="risingsunpuzzle-arrow risingsunpuzzle-arrowUp">
-          <img src="./assets/UpArrow.png"/>
+          {arrowUp}
         </div>
         <div className="risingsunpuzzle-arrow risingsunpuzzle-arrowRight">
-          <img src="./assets/RightArrow.png"/>
+          {arrowRight}
         </div>
         <div className="risingsunpuzzle-arrow risingsunpuzzle-arrowDown">
-          <img src="./assets/DownArrow.png"/>
+          {arrowDown}
         </div>
         <div className="risingsunpuzzle-arrow risingsunpuzzle-arrowLeft">
-          <img src="./assets/LeftArrow.png"/>
+          {arrowLeft}
         </div>
       </div>;
     });
