@@ -377,38 +377,28 @@ var RisingSunPuzzle = function (_Component) {
           gridRowStart: topLeft[1]
         };
 
-        var arrowUp = new Image();
-        var arrowRight = new Image();
-        var arrowDown = new Image();
-        var arrowLeft = new Image();
-
-        arrowUp.src = _UpArrow2.default;
-        arrowRight.src = _RightArrow2.default;
-        arrowDown.src = _DownArrow2.default;
-        arrowLeft.src = _LeftArrow2.default;
-
         return _react2.default.createElement(
           'div',
           { key: pieceID, className: pieceClassName, style: pieceStyle },
           _react2.default.createElement(
             'div',
             { className: 'risingsunpuzzle-arrow risingsunpuzzle-arrowUp' },
-            arrowUp
+            _react2.default.createElement('img', { src: _UpArrow2.default })
           ),
           _react2.default.createElement(
             'div',
             { className: 'risingsunpuzzle-arrow risingsunpuzzle-arrowRight' },
-            arrowRight
+            _react2.default.createElement('img', { src: _RightArrow2.default })
           ),
           _react2.default.createElement(
             'div',
             { className: 'risingsunpuzzle-arrow risingsunpuzzle-arrowDown' },
-            arrowDown
+            _react2.default.createElement('img', { src: _DownArrow2.default })
           ),
           _react2.default.createElement(
             'div',
             { className: 'risingsunpuzzle-arrow risingsunpuzzle-arrowLeft' },
-            arrowLeft
+            _react2.default.createElement('img', { src: _LeftArrow2.default })
           )
         );
       });
