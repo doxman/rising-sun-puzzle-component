@@ -22,6 +22,7 @@ html {
 
 .risingsunpuzzle-piece {
   margin: 5px;
+  position: relative;
 }
 
 .risingsunpuzzle-piece.risingsunpuzzle-piece-sun {
@@ -46,8 +47,35 @@ html {
 
 .risingsunpuzzle-arrow {
   background-color: white;
+  height: 32px;
+  width: 32px;
+  position: absolute;
 }
 
 .risingsunpuzzle-arrow:hover {
   background-color: teal;
+}
+
+.risingsunpuzzle-arrowUp {
+  left: 50%;
+  top: -5px;
+  transform: translateX(-50%);
+}
+
+.risingsunpuzzle-arrowRight {
+  top: 50%;
+  right: -5px;
+  transform: translateY(-50%);
+}
+
+.risingsunpuzzle-arrowDown {
+  left: 50%;
+  bottom: -5px;
+  transform: translateX(-50%);
+}
+
+.risingsunpuzzle-arrowLeft {
+  top: 50%;
+  left: -5px;
+  transform: translateY(-50%);
 }
